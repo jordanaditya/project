@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Contact')
+@section('title', 'Manage')
 
 @section('content')
 
@@ -10,8 +10,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Contact Me</h1>
-            <span class="subheading">Have questions? I have answers.</span>
+            <h1>Write Here!</h1>
+            <span class="subheading">Write Yours Article Here!</span>
           </div>
         </div>
       </div>
@@ -22,11 +22,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+        <p>Want to Write Yours Own Article ? Just Write Here!</p>
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-        <form name="sentMessage" id="contactForm" novalidate>
+
+        <!--<form name="sentMessage" id="contactForm" novalidate>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
@@ -61,6 +62,29 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  @endsection
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+          <th>No</th>
+          <th>Judul</th>
+          <th>Tanggal</th>
+          <th>Manage</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach($articles as $a)
+        <tr>
+            <td>{{$a->id}}</td>
+            <td>{{$a->title}}</td>
+            <td>{{$a->created_at}}</td>
+            <td><a href="articleEdit/{{$a->id}}" class="badge badgewarning" class="btn btn-primary">Edit</a><a href="articleDelete/{{$a ->id}}" class="badge badgedanger">Hapus</a></td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+<td><a href="articleAdd" class="btn btn-primary">Tambah Data</a></td>
+
+
+@endsection

@@ -14,7 +14,6 @@
                         </div>
                     @endif
                     You are login!
-                    <a class="nav-link" href="homes">Home</a>
                 </div>
             </div>
         </div>

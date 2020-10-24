@@ -8,10 +8,11 @@ use Illuminate\Support\Facades\Cache;
 class HomesController extends Controller
 {
     public function __invoke() {
-        Cache::remember('articles', 4, function(){
+        Cache::remember('articles', 10, function(){
             return Article::all();
         });
             $articles = Cache::get('articles');
             return view('homes')->with(compact('articles'));
     }
+    
 }

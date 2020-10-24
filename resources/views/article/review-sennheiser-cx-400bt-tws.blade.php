@@ -61,6 +61,38 @@
           <p>Placeholder text by
             <a href="#">Admin</a>. Photographs by
             <a href="#">NgeReview.com</a>.</p>
+
+               <!-- Comments Form -->
+            <form action="/komentarCreate3" method="post">
+              @csrf
+            <div class="card my-4">
+              <h5 class="card-header">Leave a Comment:</h5>
+              <div class="card-body">
+              <form>
+              <h6>Nama:</h6>
+              <div class="form-group">
+                <textarea class="form-control" rows="1" required="required" name="nama"></textarea>
+              </div>
+              <h6>Komentar:</h6>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" required="required" name="komen"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        @foreach($komentartiga as $k3)
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">{{$k3->nama}}</h5>
+            {{$k3->komen}}
+          </div>
+        </div>
+        @endforeach
+
         </div>
       </div>
     </div>

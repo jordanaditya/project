@@ -14,11 +14,20 @@
 
 Route::get('/homes', 'HomesController');
 Route::get('/about', 'AboutController');
-Route::get('/contact', 'ContactController');
-Route::get('/review-lenovo-thinkpad-p15s-laptop-workstation-kelas-terjangkau', 'ArticleController@article1');
-Route::get('/preview-snapdragon-662-smartphone-murah-jadi-makin-seru', 'ArticleController@article2');
-Route::get('/hands-on-samsung-galaxy-watch3-premium-kaya-fitur', 'ArticleController@article3');
-Route::get('/review-sennheiser-cx-400bt-tws', 'ArticleController@article4');
+Route::get('/preview-snapdragon-662-smartphone-murah-jadi-makin-seru', 'ArticleController@article1');
+Route::get('/hands-on-samsung-galaxy-watch3-premium-kaya-fitur', 'ArticleController@article2');
+Route::get('/review-sennheiser-cx-400bt-tws', 'ArticleController@article3');
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/manage', 'ManageController@index')->name('manage');
+Route::get('/articleAdd','ManageController@add');
+Route::post('/articleCreate','ManageController@create');
+Route::get('/articleEdit/{id}','ManageController@edit');
+Route::post('/articleUpdate/{id}','ManageController@update');
+Route::get('/articleDelete/{id}','ManageController@delete');
+
+Route::post('/komentarCreate1', 'ArticleController@create1');
+Route::post('/komentarCreate2', 'ArticleController@create2');
+Route::post('/komentarCreate3', 'ArticleController@create3');
