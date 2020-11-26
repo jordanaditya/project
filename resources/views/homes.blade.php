@@ -29,8 +29,8 @@
               {{$home -> title}}
             </h2>
             <p class="post-subtitle">
-            <a href="#">
-            <img class="img-fluid" src={{$home->image}} alt="">
+            <a href="{{$home->link}}">
+            <img class="img-fluid" src="{{asset('storage/'.$home->image)}}">
           </a>
               {{$home->content}}
             </p>

@@ -3,8 +3,8 @@
 
 @section('content')
 
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/contact-bg.jpg')">
+  <!-- Page Header -->"
+  <header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -64,8 +64,9 @@
     </div>
   </div> -->
 
-  <form action="/articleUpdate/{{$articles ->id}}" method="post">
- {{csrf_field()}}
+  <form action="/articleUpdate/{{$articles ->id}}" method="post"
+  enctype="multipart/form-data">
+@csrf
  <div class="form-group">
  <label for="title">Judul</label>
  <input type="text" class="form-control"
@@ -83,8 +84,9 @@ required="required" name="content" value="{{$articles->content}}"></br>
  </div>
  <div class="form-group">
  <label for="image">Image</label>
- <input type="text" class="form-control"
+ <input type="file" class="form-control"
 required="required" name="image" value="{{$articles->image}}"></br>
+<img width="150px" src="{{asset('storage/'.$articles->image)}}">
  </div>
  <button type="submit" name="edit" class="btn btnprimary float-right">Ubah Data</button>
 </form>

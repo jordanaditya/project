@@ -67,7 +67,7 @@
 <table class="table table-bordered table-striped">
     <thead>
       <tr>
-          <th>No</th>
+          <th>ID</th>
           <th>Judul</th>
           <th>Tanggal</th>
           <th>Manage</th>
@@ -85,6 +85,7 @@
     </tbody>
 </table>
 <td><a href="articleAdd" class="btn btn-primary">Tambah Data</a></td>
+<a href="/cetakPDF" class="btn btn-primary" target="_blank">Cetak PDF</a>
 
 
 @endsection

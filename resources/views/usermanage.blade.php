@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Contact')
+@section('title', 'Manage')
 
 @section('content')
 
@@ -10,8 +10,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Write Here!</h1>
-            <span class="subheading">Write Yours Article Here!</span>
+            <h1>Manage the User</h1>
+            <span class="subheading">Manage User Here!</span>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Want to Write Yours Own Article ? Just Write Here!</p>
+        <p>Create, Read, Update, and Delete the User</p>
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -64,29 +64,29 @@
     </div>
   </div> -->
 
-  <form action="articleCreate" method="post" enctype="multipart/form-data">
- @csrf
- <div class="form-group">
- <label for="title">Judul</label>
- <input type="text" class="form-control"
-required="required" name="title"></br>
- </div>
- <div class="form-group">
- <label for="content">Content</label>
- <input type="text" class="form-control"
-required="required" name="content"></br>
- </div>
- <div class="form-group">
- <label for="link">Route</label>
- <input type="text" class="form-control"
-required="required" name="link"></br>
- </div>
- <div class="form-group">
- <label for="image">Image</label>
- <input type="file" class="form-control"
-required="required" name="image"></br>
- </div>
- <button type="submit" name="add" class="btn btnprimary float-right">Tambah Data</button>
- </form>
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+          <th>Profile</th>
+          <th>ID</th>
+          <th>Nama</th>
+          <th>email</th>
+          <th>Manage</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach($users as $u)
+        <tr>
+            <td><img width="75px" height="75px" src="{{asset('storage/'.$u->profile)}}"></td>
+            <td>{{$u->id}}</td>
+            <td>{{$u->name}}</td>
+            <td>{{$u->email}}</td>
+            <td><a href="userEdit/{{$u->id}}" class="badge badgewarning" class="btn btn-primary">Edit</a><a href="userDelete/{{$u ->id}}" class="badge badgedanger">Hapus</a></td>
+        </tr>
+        @endforeach 
+    </tbody>
+</table>
+<td><a href="userAdd" class="btn btn-primary">Tambah User</a></td>
+<a href="/cetakUserPDF" class="btn btn-primary" target="_blank">Cetak PDF</a>
 
 @endsection

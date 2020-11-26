@@ -64,29 +64,31 @@
     </div>
   </div> -->
 
-  <form action="articleCreate" method="post" enctype="multipart/form-data">
- @csrf
+  <form action="/userUpdate/{{$users ->id}}" method="post" enctype="multipart/form-data">
+ {{csrf_field()}}
  <div class="form-group">
- <label for="title">Judul</label>
+ <label for="name">Nama</label>
  <input type="text" class="form-control"
-required="required" name="title"></br>
+required="required" name="name" value="{{$users->name}}"></br>
  </div>
  <div class="form-group">
- <label for="content">Content</label>
+ <label for="email">E-mail</label>
  <input type="text" class="form-control"
-required="required" name="content"></br>
+required="required" name="email" value="{{$users->email}}"></br>
  </div>
  <div class="form-group">
- <label for="link">Route</label>
+ <label for="password">Password</label>
  <input type="text" class="form-control"
-required="required" name="link"></br>
+required="required" name="password" value="{{$users->password}}"></br>
  </div>
+ 
  <div class="form-group">
- <label for="image">Image</label>
- <input type="file" class="form-control"
-required="required" name="image"></br>
+ <label for="profile">Profile</label>
+ <input type="file" class="form-control" required="required"
+name="profile" value="{{$users->profile}}"></br>
+ <img width="150px" src="{{asset('storage/'.$users->profile)}}">
  </div>
- <button type="submit" name="add" class="btn btnprimary float-right">Tambah Data</button>
- </form>
 
+ <button type="submit" name="edit" class="btn btnprimary float-right">Ubah Data</button>
+</form>
 @endsection

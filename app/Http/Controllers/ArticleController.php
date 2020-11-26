@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 use App\Komentar;
 use App\KomentarSatu;
 use App\KomentarTiga;
+use Illuminate\Support\Facades\Gate;
 class ArticleController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('auth');
+        
+    }
     public function article1() {
         $komentarsatu = KomentarSatu::all();
         return view('article.preview-snapdragon-662-smartphone-murah-jadi-makin-seru', ['komentarsatu' => $komentarsatu]);

@@ -35,14 +35,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item"> {{ Route::is('homes') ? 'active' : ''}}
+            @can('user-display')
             <a class="nav-link" href="homes">Home</a>
+            @endcan
           </li>
-          <li class="nav-item">
+          <li class="nav-item"> {{ Route::is('about') ? 'active' : ''}}
+            @can('user-display')
             <a class="nav-link" href="about">About</a>
+            @endcan
           </li>
-          <li class="nav-item">
+          <li class="nav-item"> {{ Route::is('manage') ? '' : ''}}
+            @can('manage-articles')
             <a class="nav-link" href="manage">Write</a>
+            @endcan
+          </li>
+          <li class="nav-item"> {{ Route::is('manage') ? '' : ''}}
+            @can('manage-articles')
+            <a class="nav-link" href="usermanage">User Manage</a>
+            @endcan
           </li>
           @guest
                             <li class="nav-item">

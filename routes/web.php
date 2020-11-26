@@ -31,3 +31,13 @@ Route::get('/articleDelete/{id}','ManageController@delete');
 Route::post('/komentarCreate1', 'ArticleController@create1');
 Route::post('/komentarCreate2', 'ArticleController@create2');
 Route::post('/komentarCreate3', 'ArticleController@create3');
+
+Route::get('/usermanage', 'UserController@index');
+Route::get('/userAdd','UserController@add');
+Route::post('/userCreate','UserController@create');
+Route::get('/userEdit/{id}','UserController@edit');
+Route::post('/userUpdate/{id}','UserController@update');
+Route::get('/userDelete/{id}','UserController@delete');
+
+Route::get('/cetakPDF', 'ManageController@cetak_pdf');
+Route::get('/cetakUserPDF','UserController@cetak_user_pdf');

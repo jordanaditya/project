@@ -10,8 +10,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Write Here!</h1>
-            <span class="subheading">Write Yours Article Here!</span>
+            <h1>Tambah User Disini!</h1>
+            <span class="subheading">Tambah User Disini!</span>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Want to Write Yours Own Article ? Just Write Here!</p>
+        <p>Tambah User Disini</p>
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -64,28 +64,29 @@
     </div>
   </div> -->
 
-  <form action="articleCreate" method="post" enctype="multipart/form-data">
+  <form action="userCreate" method="post" enctype="multipart/form-data">
  @csrf
  <div class="form-group">
- <label for="title">Judul</label>
+ <label for="name">Nama</label>
  <input type="text" class="form-control"
-required="required" name="title"></br>
+required="required" name="name"></br>
  </div>
  <div class="form-group">
- <label for="content">Content</label>
+ <label for="email">E-mail</label>
  <input type="text" class="form-control"
-required="required" name="content"></br>
+required="required" name="email"></br>
  </div>
  <div class="form-group">
- <label for="link">Route</label>
+ <label for="password">Password</label>
  <input type="text" class="form-control"
-required="required" name="link"></br>
+required="required" name="password"></br>
  </div>
  <div class="form-group">
- <label for="image">Image</label>
- <input type="file" class="form-control"
-required="required" name="image"></br>
- </div>
+ <label for="profile">Profile</label>
+ <input type="file" class="form-control" required="required"
+name="profile"></br>
+</div>
+
  <button type="submit" name="add" class="btn btnprimary float-right">Tambah Data</button>
  </form>
 

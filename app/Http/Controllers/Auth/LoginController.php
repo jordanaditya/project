@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -46,8 +47,12 @@ class LoginController extends Controller
      * @param  mixed  $user
      * @return mixed
      */
-    protected function authenticated(Request $request, $user)
-    {
-        return redirect('/homes');
+    public function authenticated(Request $request, $user)
+    {   
+        if ($user -> roles== 'Administrator') {
+            return redirect('/manage');
+        } else {
+            return redirect('/homes');
+        }
     }
 }
