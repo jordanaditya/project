@@ -1,0 +1,133 @@
+[2020-10-03 04:43:34] local.ERROR: Command "make:HomeController" is not defined.
+
+Did you mean one of these?
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:HomeController\" is not defined.
+
+Did you mean one of these?
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at C:\\xampp\\htdocs\\kuisSatu\\vendor\\symfony\\console\\Application.php:676)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\kuisSatu\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('make:HomeContro...')
+#1 C:\\xampp\\htdocs\\kuisSatu\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\kuisSatu\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-10-03 04:53:07] local.ERROR: Use of undefined constant HomeController - assumed 'HomeController' (this will throw an Error in a future version of PHP) {"exception":"[object] (ErrorException(code: 0): Use of undefined constant HomeController - assumed 'HomeController' (this will throw an Error in a future version of PHP) at C:\\xampp\\htdocs\\kuisSatu\outes\\web.php:18)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\kuisSatu\outes\\web.php(18): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\xampp\\\\htdocs...', 18, Array)
+#1 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#2 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(416): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(121): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#5 C:\\xampp\\htdocs\\kuisSatu\\app\\Providers\\RouteServiceProvider.php(56): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\kuisSatu\\app\\Providers\\RouteServiceProvider.php(40): App\\Providers\\RouteServiceProvider->mapWebRoutes()
+#7 [internal function]: App\\Providers\\RouteServiceProvider->map()
+#8 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(87): Illuminate\\Container\\Container->call(Array)
+#14 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#15 C:\\xampp\\htdocs\\kuisSatu\\app\\Providers\\RouteServiceProvider.php(28): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->boot()
+#16 [internal function]: App\\Providers\\RouteServiceProvider->boot()
+#17 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#18 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#20 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#21 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#22 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(856): Illuminate\\Container\\Container->call(Array)
+#23 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(839): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#24 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 21)
+#25 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(840): array_walk(Array, Object(Closure))
+#26 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#27 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#28 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#29 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#30 C:\\xampp\\htdocs\\kuisSatu\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 {main}
+"} 
+[2020-10-03 04:55:11] local.ERROR: Invalid route action: [App\Http\Controllers\ArticleController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\ArticleController]. at C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:91)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(46): Illuminate\\Routing\\RouteAction::makeInvokable('App\\\\Http\\\\Contro...')
+#1 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(162): Illuminate\\Routing\\RouteAction::parse('Article', Array)
+#2 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(141): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(548): Illuminate\\Routing\\Route->__construct(Array, 'Article', Array)
+#4 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(467): Illuminate\\Routing\\Router->newRoute(Array, 'Article', Array)
+#5 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(446): Illuminate\\Routing\\Router->createRoute(Array, '/Article', Array)
+#6 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(145): Illuminate\\Routing\\Router->addRoute(Array, '/Article', 'ArticleControll...')
+#7 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('/Article', 'ArticleControll...')
+#8 C:\\xampp\\htdocs\\kuisSatu\outes\\web.php(20): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#10 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(416): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#11 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(121): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#13 C:\\xampp\\htdocs\\kuisSatu\\app\\Providers\\RouteServiceProvider.php(56): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#14 C:\\xampp\\htdocs\\kuisSatu\\app\\Providers\\RouteServiceProvider.php(40): App\\Providers\\RouteServiceProvider->mapWebRoutes()
+#15 [internal function]: App\\Providers\\RouteServiceProvider->map()
+#16 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#17 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#19 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#20 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#21 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(87): Illuminate\\Container\\Container->call(Array)
+#22 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#23 C:\\xampp\\htdocs\\kuisSatu\\app\\Providers\\RouteServiceProvider.php(28): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->boot()
+#24 [internal function]: App\\Providers\\RouteServiceProvider->boot()
+#25 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#26 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#27 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#28 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#29 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#30 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(856): Illuminate\\Container\\Container->call(Array)
+#31 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(839): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#32 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 21)
+#33 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(840): array_walk(Array, Object(Closure))
+#34 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#35 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(219): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#36 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#37 C:\\xampp\\htdocs\\kuisSatu\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#38 C:\\xampp\\htdocs\\kuisSatu\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#39 {main}
+"} 
